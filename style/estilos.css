@@ -1,0 +1,161 @@
+menu {
+    padding: 1%;
+    margin: 3%;
+    border: 5% solid black;
+
+}
+
+h1 {
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+p {
+    color: blueviolet;
+    font-synthesis: style;
+    padding-block: inherit;
+    font-style: italic;
+}
+
+article {
+    border: 5%;
+}
+
+a {
+    color: blueviolet;
+    text-decoration: double;
+}
+
+body {
+    background-color: beige;
+    padding: 5%;
+    border: 5%;
+    margin: 5%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    text-align: center;
+    box-sizing: content-box;
+    border-color: chartreuse;
+    align-content: last baseline;
+}
+
+footer {
+    background-color: hwb(66 33% 3%);
+    display: flex;
+    margin-top: auto;
+
+}
+
+.footer {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2px;
+    border: 10% solid black rgb(0, 0, 0);
+}
+
+li {
+    border-bottom: brown;
+    border: 20px;
+}
+
+.texto {
+    position: absolute;
+    top: 50px;
+    width: 50px;
+    height: max-content;
+    background-color: aqua;
+    padding: 5px;
+    border-bottom: #505634;
+    border: 5px solid black;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.presentacion {
+    width: 100%;
+    height: 500px;
+}
+
+.productos {
+    display: flex;
+
+}
+
+.bolsones {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+
+}
+
+div {
+    margin: 20px;
+    padding: 10px;
+    border: 10px;
+}
+
+.formulario {
+    display: flex;
+}
+.formulario {
+    width: 400px;
+    background-color: #24303c ;
+    padding: 300px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+
+}
+
+.formulario h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls {
+    width: 100%;
+    background: #24303c;
+    padding: 10px;
+    border-radius: 4px ;
+    margin-bottom: 16px;
+    border: 1px solid black;
+}
+.formulario .button {
+    width: 100%;
+    background-color: aliceblue;
+    border: none;
+    padding: 12px;
+}
+
+.navheader {
+    background-color: bisque;
+}
+.navheader ul {
+    justify-content: space-between;
+}
+.navheader li {
+    margin: 0 15px4
+}
+.navheader a {
+    color: rgb(206, 17, 49);
+    display: block;
+}
