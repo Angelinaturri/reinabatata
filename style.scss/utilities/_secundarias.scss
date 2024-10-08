@@ -1,0 +1,32 @@
+.formulario .button {
+    width: 100%;
+    background-color: aliceblue;
+    border: none;
+    padding: 12px;
+
+}
+
+
+
+.zonas {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+        padding: 10px;
+        background-color: $color-contraste;
+        border: 1px solid $border-color;
+        border-radius: 5px;
+    }
+}
+
+.mapa {
+    img {
+        max-width: 50%;
+        height: auto;
+        margin-top: 15px;
+    }
+}

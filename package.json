@@ -1,0 +1,11 @@
+{
+  "name": "proyecto-coder",
+  "version": "1.0.0",
+  "description": "Hola este es mi proyecto de coderhouse.\r Soy angelina turri tengo 24 años y me estoy metiendo en el mundo de la programacion.\r Me recibi de profesora de educacion fisica, soy aficionada al deporte.\r Soy arbitra de voley y profesora de voley.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

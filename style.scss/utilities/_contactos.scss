@@ -1,0 +1,96 @@
+.contacto {
+    @extend .flex;
+    padding: 1rem;
+    margin: 1rem;
+
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    @include celular {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: solid $color-gris 1px;
+    }
+}
+
+.formulario {
+    background-color: $color-gris;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem;
+    box-shadow: 0 2px 10px $border-color;
+    max-width: 700px;
+    max-height: 500px;
+    @include tablet {
+        width: 550px;
+        height: 1000px;
+    }
+
+    @include celular {
+        width: 350px;
+        height: 600px;
+        
+    }
+}
+
+.form2 {
+    border: 1px solid $color-gris;
+    padding: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px $border-color;
+    background-color: $color-contraste;
+    max-width: 700px;
+    max-height: 400px;
+    @include tablet {
+        width: 500px;
+        height: 800px;
+    }
+
+    @include celular {
+        width: 270px;
+        height: 450px;
+    }
+
+}
+label {
+    margin: 10px 0 5px;
+    color: $text-color;
+}
+
+.controls {
+    width: 100%;
+    background: $primary-color;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid $border-color;
+    border-radius: 4px;
+    
+}
+
+
+input[type="submit"] {
+    background-color: $primary-color;
+    color: $text-color;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+
+    &:hover {
+        background-color: $secondary-color;
+    }
+}
+
+.faq {
+    flex: 1;
+    background-color: $color-gris;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px $color-gris;
+}
