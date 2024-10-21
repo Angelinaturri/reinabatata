@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reina batata</title>
+    <title>Tipos de bolsones</title>
+    <meta name="descripcion"
+        content="Bienvenido a nuestra página de productos, donde podrás explorar nuestra variedad de bolsones de verduras frescas y de temporada.Descubre la frescura y calidad de nuestros productos y elige el bolsón que mejor se adapte a ti. ¡Haz tu pedido hoy y disfruta de verduras frescas en tu mesa!">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.scss/estilos.css">
+    <link rel="stylesheet" href="../scss/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,7 +24,7 @@
     <header>
         <nav class="navbar navbar-expand-lg ">
             <div class="container-fluid">
-                <img class="logo" src="../image/Logos de Verdulería y Frutería Ilustrado Negro.png"
+                <img class="logo" src="../image/logonegro.png"
                     alt="Logo Reina Batata">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                     aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,82 +36,77 @@
                             <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="../pages/contacto.html">Contactos</a>
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contactos</a>
                         </li>
                         <li class="nav-item">
                         </li>
-                        <a class="nav-link active" aria-current="page" href="../pages/productos.html">Productos</a>
-                        </li>
-                        <li class="nav-item">
-                        </li>
-                        <a class="nav-link active" aria-current="page" href="../pages/proximasentregas.html">Proximas
-                            entregas</a>
+                        <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
                         </li>
                         <li class="nav-item"></li>
-                        <a class="nav-link active" aria-current="page" href="../pages/zonadeenvio.html">Zonas de
+                        <a class="nav-link active" aria-current="page" href="zonadeenvio.html">Zonas de
                             envio</a>
                         </li>
                     </ul>
-                    <form class="d-flex" action="../pages/pediya.html" method="get" role="search">
+                    <form class="d-flex" action="pediya.html" method="get" role="search">
                         <button class="btn btn-outline-success" type="submit">Pedir ya</button>
                     </form>
                 </div>
             </div>
         </nav>
         <div class="productosinicio">
-            <div class="card" style="width: 18rem;">
-                <img src="../image/basico.jpg" class="card-img-top" alt="Bolson de Verduras Clásicas">
-                <div class="card-body">
-                    <h5 class="card-title">Bolson de Verduras Clásicas</h5>
+            <div class="card" >
+                <img src="../image/basico.jpg" class="card-img-top" alt="Foto de bolson de verduras clasico que contiene verduras comunes: zanahorias, papas, cebollas, tomates, lechuga">
+                <div >
+                    <h2 class="card-title">Bolson de verduras clásicas</h2>
                     <p class="card-text">Una selección equilibrada de verduras esenciales como zanahorias, papas,
                         cebollas, y lechuga. Perfecto para cualquier tipo de preparación culinaria.</p>
-                    <a href="#" class="btn btn-primary">Adquirir</a>
+                    <a href="#" class="btn colorboton">Adquirir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../image/organico.jpg" class="card-img-top" alt="Bolson Orgánico">
-                <div class="card-body">
-                    <h5 class="card-title">Bolson Orgánico</h5>
+            <div class="card">
+                <img src="../image/organico.jpg" class="card-img-top" alt="Bolson orgánico que contiene kale, zanahoria, berenjena, rucula y brocoli.">
+                <div >
+                    <h2 class="card-title">Bolson orgánico</h2>
                     <p class="card-text"> Veggies cultivadas sin pesticidas ni químicos. Incluye espinacas, tomates
                         cherry, brócoli, y calabacines. Ideal para quienes buscan alimentos más saludables y
                         sostenibles.</p>
-                    <a href="#" class="btn btn-primary">Adquirir</a>
+                    <a href="#" class="btn colorboton">Adquirir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../image/clasico.webp" class="card-img-top" alt="Bolson de Verduras de Temporada">
-                <div class="card-body">
-                    <h5 class="card-title">Bolson de Verduras de Temporada</h5>
+            <div class="card" >
+                <img src="../image/clasico.webp" class="card-img-top" alt="Bolson de verduras de temporada que contiene espinaca, pimiento, calabaza, remolacha y acelga.">
+                <div >
+                    <h2 class="card-title">Bolson de verduras de temporada</h2>
                     <p class="card-text">Variedad de verduras frescas según la temporada, como remolacha, acelga, y col
                         rizada. Disfruta de la frescura y el sabor del mercado local.</p>
-                    <a href="#" class="btn btn-primary">Adquirir</a>
+                    <a href="#" class="btn colorboton">Adquirir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../image/familiar.webp" class="card-img-top" alt="Bolson Familiar">
-                <div class="card-body">
-                    <h5 class="card-title">Bolson Familiar</h5>
+            <div class="card" >
+                <img src="../image/familiar.webp" class="card-img-top" alt="Bolson Familiar que contiene: zanahoria, papa, lechuga, tomate, banana, manzana y naranja.">
+                <div >
+                    <h2 class="card-title">Bolson familiar</h2>
                     <p class="card-text">Un surtido generoso de verduras que alimenta a toda la familia. Incluye
                         patatas, zanahorias, pimientos y cebollas. ¡Perfecto para recetas familiares!</p>
-                    <a href="#" class="btn btn-primary">Adquirir</a>
+                    <a href="#" class="btn colorboton">Adquirir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../image/gourmet.webp" class="card-img-top" alt="Bolson Gourmet">
-                <div class="card-body">
-                    <h5 class="card-title">Bolson Gourmet</h5>
+            <div class="card">
+                <img src="../image/gourmet.webp" class="card-img-top" alt="Bolson Gourmet que contiene: esparragos, rucula, coliflor morado, cherrys, remolacha y pimientos dulces.">
+                <div >
+                    <h2 class="card-title">Bolson gourmet</h2>
                     <p class="card-text">Una mezcla de verduras premium como alcachofas, espárragos, y setas. Ideal para
                         quienes desean preparar platos más elaborados y sofisticados.</p>
-                    <a href="#" class="btn btn-primary">Adquirir</a>
+                    <a href="#" class="btn colorboton">Adquirir</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <img src="../image/parrilla.jpg" class="card-img-top" alt="Bolson de Verduras para Asar">
-                <div class="card-body">
-                    <h5 class="card-title">Bolson de Verduras para Asar</h5>
+            <div class="card">
+                <img src="../image/parrilla.jpg" class="card-img-top" alt="Bolson de Verduras para Asar que contiene calabaza, cebollas, champignones, pimientos. ">
+                <div >
+                    <h2 class="card-title">Bolson de verduras para asar</h2>
                     <p class="card-text"> Incluye verduras ideales para asar como berenjenas, pimientos y calabacines.
                         Perfecto para una comida saludable y deliciosa a la parrilla.</p>
-                    <a href="#" class="btn btn-primary">Adquirir</a>
+                    <a href="#" class="btn colorboton">Adquirir</a>
                 </div>
             </div>
         </div>
@@ -119,8 +116,8 @@
             <div class="box1">
                 <figure class="logo2">
                     <a href="#">
-                        <img class="logo" src="../image/Logos de Verdulería y Frutería Ilustrado Negro.png"
-                            alt="Logo de Reina Batata">
+                        <img class="logo" src="../image/logonegro.png"
+                            alt="Logo de la tienda de bolsones de verdura: Reina Batata">
                     </a>
                 </figure>
             </div>

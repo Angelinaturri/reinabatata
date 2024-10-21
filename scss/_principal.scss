@@ -3,11 +3,15 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+a {
     font-family: $font-family;
     color: $text-color;
     padding: 5px;
     margin: 5px;
+    @extend .flex;
+  
+
 }
 
 h1 {
@@ -30,12 +34,16 @@ h5 {
     font-size: 0.8rem;
 }
 
+
 .flex {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     margin: 10px;
+}
+.logo {
+    border-radius: 10px;
 }
 
 @mixin logos ($ancho, $alto) {

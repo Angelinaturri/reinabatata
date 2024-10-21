@@ -3,7 +3,8 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+a {
   font-family: "Nunito", sans-serif;
   color: #1D260F;
   padding: 5px;
@@ -30,12 +31,22 @@ h5 {
   font-size: 0.8rem;
 }
 
-.flex, .contacto, .titulo .subtitulo .contenedor .pie-pagina {
+.flex, .contacto, h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 10px;
+}
+
+.logo {
+  border-radius: 10px;
 }
 
 .logo {
@@ -56,22 +67,22 @@ h5 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
   }
 }
 
 .imagenes {
-  width: 80%;
-  height: 600px;
+  width: 50%;
+  height: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 @media screen and (max-width: 900px) {
   .imagenes {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 450px;
   }
 }
 @media screen and (max-width: 576px) {
@@ -79,13 +90,11 @@ h5 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 200px;
   }
 }
 
 .imagenes1 {
-  width: 1300px;
+  width: 100%;
   height: 600px;
 }
 @media screen and (max-width: 900px) {
@@ -109,8 +118,9 @@ h5 {
 
 .btn-outline-success {
   border-color: #bcbeb9;
-  color: #ccc;
+  color: #dbdbdb;
   transition: background-color 0.3s, color 0.3s;
+  font-size: 1.2rem;
 }
 .btn-outline-success:hover {
   background-color: white;
@@ -120,6 +130,7 @@ h5 {
 .navbar {
   background-color: #6b8e23;
   transition: background-color 0.3s;
+  font-size: 1.2rem;
 }
 .navbar .navbar-nav .nav-link {
   color: white;
@@ -130,10 +141,66 @@ h5 {
   background-color: white;
 }
 
+.principio {
+  border: solid #bcbeb9 2px;
+  border-radius: 12px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #dbdbdb;
+}
+
+.recetario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+  justify-items: center;
+  align-items: center;
+}
+@media screen and (max-width: 900px) {
+  .recetario {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .recetario {
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+  }
+}
+
+.receta {
+  border: solid #bcbeb9 2px;
+  border-radius: 12px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+}
+@media screen and (max-width: 900px) {
+  .receta {
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+}
+@media screen and (max-width: 576px) {
+  .receta {
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+}
+
+.rece1 {
+  background-color: #97a75f;
+  color: #1D260F;
+}
+
 footer {
   background-color: #22577A;
   padding: 20px;
-  text-align: center;
+  width: 100%;
 }
 footer .grupo-1 {
   width: 100%;
@@ -144,12 +211,13 @@ footer .grupo-1 {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  width: 90%;
 }
 @media screen and (max-width: 900px) {
   footer .grupo-1 {
     display: flex;
     flex-direction: column;
-    width: 700px;
+    width: 90%;
     height: 500px;
     flex-wrap: nowrap;
     align-items: center;
@@ -160,7 +228,7 @@ footer .grupo-1 {
   footer .grupo-1 {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 90%;
     height: 500px;
     flex-wrap: nowrap;
     align-items: center;
@@ -200,7 +268,7 @@ footer .h2foo {
 footer .copy {
   margin-top: 20px;
   font-size: 0.9rem;
-  color: #ccc;
+  color: #dbdbdb;
 }
 
 .contacto {
@@ -219,51 +287,51 @@ footer .copy {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    border: solid #ccc 1px;
+    border: solid #dbdbdb 1px;
   }
 }
 
 .formulario {
-  background-color: #ccc;
+  background-color: #dbdbdb;
   border: 1px solid #bcbeb9;
   border-radius: 8px;
   padding: 1rem;
   margin: 1rem;
   box-shadow: 0 2px 10px #bcbeb9;
-  max-width: 700px;
-  max-height: 500px;
+  max-width: 50%;
+  min-height: 500px;
 }
 @media screen and (max-width: 900px) {
   .formulario {
-    width: 550px;
-    height: 1000px;
+    max-width: 80%;
+    max-height: 1000px;
   }
 }
 @media screen and (max-width: 576px) {
   .formulario {
-    width: 350px;
+    width: 80%;
     height: 600px;
   }
 }
 
 .form2 {
-  border: 1px solid #ccc;
+  border: 1px solid #dbdbdb;
   padding: 0.5rem;
   border-radius: 8px;
   box-shadow: 0 2px 10px #bcbeb9;
   background-color: white;
-  max-width: 700px;
+  max-width: 100%;
   max-height: 400px;
 }
 @media screen and (max-width: 900px) {
   .form2 {
-    width: 500px;
+    width: 100%;
     height: 800px;
   }
 }
 @media screen and (max-width: 576px) {
   .form2 {
-    width: 270px;
+    width: 100%;
     height: 450px;
   }
 }
@@ -275,7 +343,7 @@ label {
 
 .controls {
   width: 100%;
-  background: #ACBF65;
+  background: #97a75f;
   padding: 10px;
   margin-bottom: 16px;
   border: 1px solid #bcbeb9;
@@ -283,7 +351,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #ACBF65;
+  background-color: #97a75f;
   color: #1D260F;
   border: none;
   cursor: pointer;
@@ -295,10 +363,10 @@ input[type=submit]:hover {
 
 .faq {
   flex: 1;
-  background-color: #ccc;
+  background-color: #dbdbdb;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 2px 10px #ccc;
+  box-shadow: 0 2px 10px #dbdbdb;
 }
 
 .formulario .button {
@@ -308,6 +376,16 @@ input[type=submit]:hover {
   padding: 12px;
 }
 
+.titulozonas {
+  background-color: #22577A;
+  border-radius: 12px;
+}
+
+.subzonas {
+  background-color: #6b8e23;
+  border-radius: 5px;
+}
+
 .zonas ul {
   list-style-type: none;
   padding: 0;
@@ -315,8 +393,8 @@ input[type=submit]:hover {
 .zonas li {
   margin: 10px 0;
   padding: 10px;
-  background-color: white;
-  border: 1px solid #bcbeb9;
+  background-color: #dbdbdb;
+  border: 1px solid #97a75f;
   border-radius: 5px;
 }
 
@@ -326,45 +404,122 @@ input[type=submit]:hover {
   margin-top: 15px;
 }
 
+.contenedorpediya {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+@media screen and (max-width: 900px) {
+  .contenedorpediya {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .contenedorpediya {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+.formulariopediya {
+  background-color: #dbdbdb;
+  border: 1px solid #bcbeb9;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 2px 10px #bcbeb9;
+  max-width: 100%;
+  min-height: 500px;
+}
+@media screen and (max-width: 900px) {
+  .formulariopediya {
+    max-width: 80%;
+    max-height: 1000px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .formulariopediya {
+    width: 80%;
+    height: 600px;
+  }
+}
+
+.pediya {
+  width: 100%;
+  height: 300px;
+}
+@media screen and (max-width: 900px) {
+  .pediya {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .pediya {
+    height: auto;
+  }
+}
+
 .productosinicio {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 450px);
   gap: 10px;
   padding: 10px;
+  justify-items: center;
 }
 @media screen and (max-width: 900px) {
   .productosinicio {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 450px);
+    grid-template-rows: repeat(3, 450px);
   }
 }
 @media screen and (max-width: 576px) {
   .productosinicio {
     display: grid;
     grid-template-columns: repeat(1, 6fr);
+    grid-template-rows: repeat(1, 450px);
   }
 }
 
 .card {
-  width: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 3px solid #bcbeb9;
+  border-radius: 12px;
 }
 @media screen and (max-width: 900px) {
   .card {
-    width: 70%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 576px) {
   .card {
-    width: 50%;
+    width: 100%;
   }
 }
 
 .card-img-top {
-  width: 286px;
+  max-width: 60%;
   height: 166px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.colorboton {
+  background-color: #6b8e23;
+  color: white;
+  border: solid #bcbeb9 1px;
+}
+.colorboton:hover {
+  color: #1D260F;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  border: solid #1D260F 1px;
 }/*# sourceMappingURL=estilos.css.map */
